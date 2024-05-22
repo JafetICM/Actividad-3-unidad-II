@@ -1,0 +1,120 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#foto {
+    flex: 1;
+    text-align: center;
+}
+
+#foto img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#info {
+    flex: 3;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#info h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    background-color: #ff6347; /* Light coral background for section titles */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#perfil h2 {
+    background-color: #4caf50; /* Green background for personal data section */
+}
+
+#experiencia h2 {
+    background-color: #2196f3; /* Blue background for experience section */
+}
+
+#educacion h2 {
+    background-color: #ff9800; /* Orange background for education section */
+}
+
+#habilidades h2 {
+    background-color: #9c27b0; /* Purple background for skills section */
+}
+
+p, h3 {
+    margin: 5px 0;
+}
+
+.trabajo, .educacion-item {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #333;
+    color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    #header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info {
+        padding-left: 0;
+        text-align: center;
+    }
+}
